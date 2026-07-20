@@ -20,7 +20,23 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyCYQC_zZQaSe0MAkqDpNq_2W1kzh82Z7qs",
+    authDomain: "mirsad-portfolio.firebaseapp.com",
+    projectId: "mirsad-portfolio",
+    storageBucket: "mirsad-portfolio.firebasestorage.app",
+    messagingSenderId: "148031036327",
+    appId: "1:148031036327:web:039e5ceb7b82233e8cf482"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+  
+  <style>
 /* ============================= TOKENS ============================= */
 :root{
   --blue:#3D8BFF;
